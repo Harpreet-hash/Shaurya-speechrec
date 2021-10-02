@@ -44,7 +44,12 @@ startBut.style('background','yellow')
   rus.size(250,50);
   rus.style('background','yellow')
 
-  
+  eng.hide();
+  hin.hide();
+  jap.hide();
+  spa.hide();
+  rus.hide();
+  chi.hide();
  
 }
 function draw(){
@@ -66,10 +71,17 @@ if(appState===1){
   background(bg1);
   startBut.hide();
 
+  eng.show();
+  hin.show();
+  spa.show();
+  jap.show();
+  rus.show();
+  chi.show();
+
+  
   eng.position(width/2-330,height/2+80);
   hin.position(width/2-330,height/2+140);
   spa.position(width/2-330,height/2+200);
-
   jap.position(width/2+30,height/2+80);
   rus.position(width/2+30,height/2+140);
   chi.position(width/2+30,height/2+200);
@@ -103,13 +115,14 @@ if(appState===1){
 }
 if(appState===2){
   background(bg1);
+
   eng.hide();
   hin.hide();
-  spa.hide();
   jap.hide();
+  spa.hide();
   rus.hide();
   chi.hide();
-
+  
   //to display text only in appState 2
   output.position(200,100)
 }
